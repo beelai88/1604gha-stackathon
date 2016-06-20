@@ -144,3 +144,19 @@ body.step3 #step1, body.step3 #step2 {
     width: 640px;
     height: 360px;
 }
+
+#random-recipe {
+    margin-top: 20px; 
+}
+
+#recipe-title {
+    text-align: center; 
+}
+
+#recipe-picture {
+    width: 100%; 
+}
+
+button {
+    margin-top: 20px;
+}

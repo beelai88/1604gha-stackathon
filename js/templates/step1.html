@@ -1,24 +1,21 @@
 
-<div ng-init="step1()">
+<div ng-init="getVideo()">
 
 	<div class="alert alert-danger"><strong>Oops!</strong> <span></span></div>
 
 	<div id="step1">
 	    <h1><i class="glyphicon glyphicon-camera"></i></h1>
 	    <p class="lead">
-	        Take a good picture of huge, printed text.
-
+	        Take a clear picture of rather large, printed text.
 
 	        <i class="glyphicon glyphicon-question-sign help" data-placement="bottom" data-content="<img src='../img/step1.png' />" data-html="true"></i>
 	    </p>
 
-        <md-button ng-click="captureVideo()">Start Capture</md-button>
-	    
 	    <figure class="not-ready">
 	        <video autoplay id="videoElement" ng-src="{{videostream}}"></video>
 	    </figure>
 	    
-	    <button class="btn btn-lg btn-success" id="takePicture" ng-click="step2()" disabled>Take a picture</button>
+	    <button class="btn btn-lg btn-success" id="takePicture" ui-sref="step2" disabled>Take a picture</button>
 	</div>
 	
 </div>

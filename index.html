@@ -11,13 +11,7 @@
         <link rel="stylesheet" href="css/jquery.Jcrop.min.css"/>
         <link rel="stylesheet" href="css/main.css"/>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-        <script src="/node_modules/angular/angular.js" defer></script>
-        <script src="/node_modules/angular-ui-router/release/angular-ui-router.js" defer></script>
-        <script src="/js/module.js" defer></script>
-        <script src="/js/main.controller.js" defer></script>
-        <script src="/js/main.factory.js" defer></script>
-        <script src="/js/states.js" defer></script>
-        <script src="/js/usermedia.service.js" defer></script>
+
         <script src="js/vendor/jquery-1.12.2.min.js" defer></script>
         <script src="js/vendor/modernizr.min.js" defer></script>
         <script src="js/vendor/bootstrap.min.js" defer></script>
@@ -38,19 +32,22 @@
                 <ul class="nav nav-pills pull-right">
                     <li class="active"><a href="#" ui-sref="step1">#1 <i class="glyphicon glyphicon-camera"></i></a></li>
                     <li class="disabled"><a href="#" ui-sref="step2">#2 <i class="glyphicon glyphicon-pencil"></i></a></li>
-                    <li class="disabled"><a href="#" ui-sref="step3">#3 <i class="glyphicon glyphicon-text-height"></i></a></li>
-                    <li class="disabled"><a href="#" ui-sref="step4">#4 <i class="fa fa-globe" aria-hidden="true"></i></a></li>
+                    <li class="disabled"><a href="#" ui-sref="step3">#3 <i class="fa fa-globe" aria-hidden="true"></i></a></li>
                 </ul>
                 <h3 class="text-muted">OCR & Translation</h3>
             </div>
 
-            <div class="footer">
-                <p></p>
-            </div>
-
         </div>
 
-
-
+        <script src="/node_modules/angular/angular.js" ></script>
+        <script src="/node_modules/angular-ui-router/release/angular-ui-router.js" ></script>
+        
+        <script src="/js/module.js" ></script>
+        <script src="/js/step1.controller.js" ></script>
+        <script src="/js/step2.controller.js" ></script>
+        <script src="/js/step3.controller.js" ></script>
+        <script src="/js/main.factory.js" ></script>
+        <script src="/js/states.js" ></script>
+        <script src="/js/usermedia.service.js" ></script>
     </body>
 </html>

@@ -1,15 +1,30 @@
 <!-- STEP THREE IS HERE -->
 <div id="step3">
     <h1><i class="glyphicon glyphicon-text-height"></i></h1>
-    <p class="lead">You'll find the recognized text below.</p>
+    <p class="lead">Here is the text you requested.</p>
+
     <figure>
         <canvas></canvas>
     </figure>
+
     <blockquote>
-        <p id="result"></p>
-        <footer></footer>
+        <p id="result">"{{ocr.text}}"</p>
+        <textarea style="width:100%" type="text" name="ocr"
+                     ng-model="ocr.text"/>{{ocr.text}}
+        </textarea>
+        <p id="translation">{{translation}}</p>
+        <footer>{{ocrText.length}} characters</footer>
     </blockquote>
-    <button class="btn btn-lg btn-success" id="translate">Translate</button>
-    <button class="btn btn-lg btn-default" id="go-back">Go back</button>
-    <button class="btn btn-lg btn-default" id="start-over">Start over</button>
+
+    <button class="btn btn-lg btn-success" ng-click="translate(ocr.text)" id="translate"><i class="fa fa-globe" aria-hidden="true"></i>  Translate</button>
+    <button class="btn btn-lg btn-success" ng-click="searchRecipes(translation)"><i class="fa fa-cutlery" aria-hidden="true"></i>  I'm feeling hungry</button>
+
+    <div id="random-recipe">
+        <h3 id="recipe-title">{{recipeName}}</h3>
+        <a href="{{recipeLink}}">
+            <img id="recipe-picture" src="{{recipePicture}}"/>
+        </a>
+    </div>
+    <button ui-sref="step1" class="btn btn-lg btn-success" id="start-over">Start over</button>
+
 </div>

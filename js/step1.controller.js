@@ -2,8 +2,8 @@
 
 app.controller('Step1Ctrl', function($scope, $sce, $document, AppFactory, UserMedia) {
 
-    var pictureWidth;
-    var pictureHeight;
+    // var pictureWidth;
+    // var pictureHeight;
 
     $scope.getVideo = function() {
         AppFactory.checkRequirements()

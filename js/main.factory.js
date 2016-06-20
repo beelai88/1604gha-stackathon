@@ -20,6 +20,7 @@ app.factory('AppFactory', function($q, $http, UserMedia){
 
 	function changeStep(step) {
 	    if (step === 1) {
+	    	console.log('in step1 changestep')
 	        video.play();
 	    } else {
 	        video.pause();
@@ -191,6 +192,24 @@ app.factory('AppFactory', function($q, $http, UserMedia){
 			return response.data; 
 		})
 		
+	}
+
+	AppFactory.cleanSlate = function(){
+		console.log('in clean slate factory')
+		changeStep(1);
+		pictureWidth = 640;
+		pictureHeight = 360;
+
+		fxCanvas = null;
+		texture = null;
+
+		resultText = "";
+
+		canvas = null;
+		step2Image = null;
+		ctx = null; 
+		
+
 	}
 
 	return AppFactory;

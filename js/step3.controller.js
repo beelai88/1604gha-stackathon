@@ -31,4 +31,8 @@ app.controller('Step3Ctrl', function($scope, $http, AppFactory) {
     		$scope.recipeLink = rand.source_url; 
     	});
     }
+
+    $scope.cleanSlate = function(){
+        AppFactory.cleanSlate();
+    }
 })
